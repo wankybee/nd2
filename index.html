@@ -13,13 +13,13 @@
  
 <ul id="menu"> 
 <li>
-  <a href="#fun">Fun</a>
+  <a id="vmc" href="#vmc">Vertical<br/>Machine<br/>Centers</a>
 </li> 
 <li>
-  <a id="with" href="#with">with</a>
+  <a id="hmc" href="#hmc">Horizonal<br/>Machine<br/>Centers</a>
 </li> 
 <li>
-  <a href="#jquery">jQuery</a>
+  <a href="#jquery">Tuning<br/>Machines</a>
 </li> 
 <li>
   <a href="#lavalamp">LavaLamp</a>
@@ -28,20 +28,35 @@
 
 <ul id="menu2"> 
   <li>
-    <a href="#fun">Sub</a>
+    <a href="#fun">first<br/>category</a>
   </li> 
   <li>
-    <a href="#with">Menu</a>
+    <a href="#with">HMC1</a>
   </li> 
   <li>
-    <a href="#jquery">demo</a>
+    <a href="#jquery">third<br/>category</a>
   </li> 
   <li>
-    <a href="#lavalamp">LavaLamp</a>
+    <a href="#lavalamp">HMC2</a>
+  </li> 
+</ul> 
+
+<ul id="vmcmenu"> 
+  <li>
+    <a href="#fun">first<br/>category</a>
+  </li> 
+  <li>
+    <a href="#with">VMC1</a>
+  </li> 
+  <li>
+    <a href="#jquery">third<br/>category</a>
+  </li> 
+  <li>
+    <a href="#lavalamp">VMC2</a>
   </li> 
 </ul> 
  
-<style type="text/css"> 
+<style type="text/css">
 ul#menu {
 list-style:none;
 margin:5px;
@@ -49,7 +64,7 @@ border:1px solid grey;
 padding:10px;
 overflow: hidden; /* makes sure the container fits the floated list-items below */
 background-color:white; /* moved and lightened the background color from ul#menu li */
-width: 120px;
+width: 135px;
 }
 ul#menu li{
 margin:3px 5px;
@@ -104,10 +119,11 @@ border:1px solid grey;
 padding:10px;
 overflow: hidden; /* makes sure the container fits the floated list-items below */
 background-color:white; /* moved and lightened the background color from ul#menu2 li */
-width: 120px;
+width: 130px;
 position: absolute;
-top: 75px;
+top: 105px;
 left: 130px;
+z-index:6;
 }
 ul#menu2 li{
 margin:3px 5px;
@@ -155,6 +171,66 @@ bottom:0px;
 left:0px;
 }
 
+
+ul#vmcmenu {
+list-style:none;
+margin:5px;
+border:1px solid grey;
+padding:10px;
+overflow: hidden; /* makes sure the container fits the floated list-items below */
+background-color:white; /* moved and lightened the background color from ul#vmcmenu li */
+width: 130px;
+position: absolute;
+top: 5px;
+left: 130px;
+z-index:6;
+}
+ul#vmcmenu li{
+margin:3px 5px;
+padding:0; /* padding moved to the a element below */
+float:left;
+font-family:Tahoma, Verdana, Arial, sans-serif;
+font-size:18px;
+font-weight:bold;
+font-style:italic;
+text-shadow: rgba(255,255,255, 1) 1px 1px 2px;
+color:#333;
+}
+ul#vmcmenu li a {
+display:block;
+padding:16px 20px 17px 18px;/* we need extra top and bottom padding to fit the slices */
+position: relative;
+z-index: 5;
+color:#333;
+text-decoration:none;
+}
+
+ul#vmcmenu li.backLava {
+background: url("img/slider-right.gif") no-repeat top right;
+position: absolute;
+}
+ul#vmcmenu li.backLava div.leftLava {
+background: url("img/slider-bg.gif") no-repeat top left;
+height: 100%;
+margin-right:24px;
+}
+ul#vmcmenu li.backLava div.cornerLava {
+background: url("img/slider-corner.gif") no-repeat bottom right;
+height:27px;
+width:24px;
+position:absolute;
+bottom:0px;
+right:0px;
+}
+ul#vmcmenu li.backLava .bottomLava {
+background: url("img/slider-bottom.gif") no-repeat bottom left;
+height:27px;
+width:100%;
+position:absolute;
+bottom:0px;
+left:0px;
+}
+
 </style> 
  
 <script type="text/javascript"> 
@@ -162,13 +238,32 @@ $(document).ready(function () {
 
 $('ul#menu').lavaLamp({ autoReturn: false });
 $('ul#menu2').hide();
+$('ul#menu2').lavaLamp({ startItem: 0 });
 
-$("#with").hover(function(){
+$('ul#vmcmenu').hide();
+$('ul#vmcmenu').lavaLamp({ startItem: 0 });
+
+
+$("#hmc").hover(function(){
+  $('ul#vmcmenu').hide();
   $('ul#menu2').show();
-  $('ul#menu2').lavaLamp();
 });
 
+$("#vmc").hover(function(){
+  $('ul#menu2').hide();
+  $('ul#vmcmenu').show();
+});
+
+
 $('ul#menu2').hover(
+  function () {
+  }, 
+  function () {
+    $(this).hide();
+  }
+);
+
+$('ul#vmcmenu').hover(
   function () {
   }, 
   function () {
