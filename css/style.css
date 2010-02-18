@@ -1,0 +1,112 @@
+ul#menu {
+list-style:none;
+margin:5px;
+border:1px solid grey;
+padding:10px;
+overflow: hidden; /* makes sure the container fits the floated list-items below */
+background-color:white; /* moved and lightened the background color from ul#menu li */
+width: 120px;
+}
+ul#menu li{
+margin:3px 5px;
+padding:0; /* padding moved to the a element below */
+float:left;
+font-family:Tahoma, Verdana, Arial, sans-serif;
+font-size:18px;
+font-weight:bold;
+font-style:italic;
+text-shadow: rgba(255,255,255, 1) 1px 1px 2px;
+color:#333;
+}
+ul#menu li a {
+display:block;
+padding:16px 20px 17px 18px;/* we need extra top and bottom padding to fit the slices */
+position: relative;
+z-index: 5;
+color:#333;
+text-decoration:none;
+}
+
+ul#menu li.backLava {
+background: url("img/slider-right.gif") no-repeat top right;
+position: absolute;
+}
+ul#menu li.backLava div.leftLava {
+background: url("img/slider-bg.gif") no-repeat top left;
+height: 100%;
+margin-right:24px;
+}
+ul#menu li.backLava div.cornerLava {
+background: url("img/slider-corner.gif") no-repeat bottom right;
+height:27px;
+width:24px;
+position:absolute;
+bottom:0px;
+right:0px;
+}
+ul#menu li.backLava .bottomLava {
+background: url("img/slider-bottom.gif") no-repeat bottom left;
+height:27px;
+width:100%;
+position:absolute;
+bottom:0px;
+left:0px;
+}
+
+ul#menu2 {
+list-style:none;
+margin:5px;
+border:1px solid grey;
+padding:10px;
+overflow: hidden; /* makes sure the container fits the floated list-items below */
+background-color:white; /* moved and lightened the background color from ul#menu2 li */
+width: 120px;
+position: absolute;
+top: 75px;
+left: 130px;
+}
+ul#menu2 li{
+margin:3px 5px;
+padding:0; /* padding moved to the a element below */
+float:left;
+font-family:Tahoma, Verdana, Arial, sans-serif;
+font-size:18px;
+font-weight:bold;
+font-style:italic;
+text-shadow: rgba(255,255,255, 1) 1px 1px 2px;
+color:#333;
+}
+ul#menu2 li a {
+display:block;
+padding:16px 20px 17px 18px;/* we need extra top and bottom padding to fit the slices */
+position: relative;
+z-index: 5;
+color:#333;
+text-decoration:none;
+}
+
+ul#menu2 li.backLava {
+background: url("img/slider-right.gif") no-repeat top right;
+position: absolute;
+}
+ul#menu2 li.backLava div.leftLava {
+background: url("img/slider-bg.gif") no-repeat top left;
+height: 100%;
+margin-right:24px;
+}
+ul#menu2 li.backLava div.cornerLava {
+background: url("img/slider-corner.gif") no-repeat bottom right;
+height:27px;
+width:24px;
+position:absolute;
+bottom:0px;
+right:0px;
+}
+ul#menu2 li.backLava .bottomLava {
+background: url("img/slider-bottom.gif") no-repeat bottom left;
+height:27px;
+width:100%;
+position:absolute;
+bottom:0px;
+left:0px;
+}
