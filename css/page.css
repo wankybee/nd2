@@ -11,10 +11,10 @@ a, a img                                { border: 0; text-decoration: none; outl
 #col1                                   { width: 49%; float: left; margin: 0 0 20px 0; }
 #col2                                   { width: 49%; float: right; }
 
-h1                                      { font: bold 60px Helvetica, Sans-Serif; letter-spacing: -2px; margin: 20px 0; text-align: center; }
-h2                                      { font: bold 30px Helvetica, Sans-Serif; letter-spacing: -1px; margin: 0 0 10px 0; }
-h3                                      { font: 16px Georgia, Serif; margin: 0 0 10px 0; }  
-h5                                      { font: 15px Georgia, Serif; text-align: center; }
+div#page-wrap h1                                      { font: bold 60px Helvetica, Sans-Serif; letter-spacing: -2px; margin: 20px 0; text-align: center; }
+div#page-wrap h2                                      { font: bold 30px Helvetica, Sans-Serif; letter-spacing: -1px; margin: 0 0 10px 0; }
+div#page-wrap h3                                      { font: 16px Georgia, Serif; margin: 0 0 10px 0; }  
+div#page-wrap h5                                      { font: 15px Georgia, Serif; text-align: center; }
 pre                                     { font: 13px/1.8 Monaco, MonoSpace; margin: 0 0 15px 0; }
 #dl                                     { position: absolute; top: 10px; right: 0; background: black; color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 3px 6px; }
 #dl:hover                               { background: #666; }

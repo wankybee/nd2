@@ -8,12 +8,14 @@
     e.preventDefault();
     var url = $(this).attr('href');
     $("#box").load(url);
+    $.getScript("js/slider.js");
    });
 
     $("#bx500").click(function(e){
     e.preventDefault();
     var url = $(this).attr('href');
     $("#slider").load(url);
+    $.getScript("js/slider.js");
    });
 
 </script>
