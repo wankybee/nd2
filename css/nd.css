@@ -1,0 +1,34 @@
+div.heading span  a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+div.cap h1 {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+div.heading {
+    padding-bottom:20px;
+}
+
+
+.border {
+    padding-right: 0px;
+}
+
+.footer
+{
+     padding-top:20px;
+     position: fixed;
+     top: 496px;
+     left: 198px;
+}
+
+.container
+{
+    position: fixed;
+    top: 0px;
+    left: 198px;
+}
