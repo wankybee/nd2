@@ -20,15 +20,15 @@ div.heading {
 
 .footer
 {
-     padding-top:20px;
-     position: fixed;
-     top: 496px;
-     left: 198px;
+     padding-top:50px;
+     /* position: fixed; */
+     /* top: 896px; */
+     /* left: 198px; */
 }
 
 .container
 {
-    position: fixed;
-    top: 0px;
-    left: 198px;
+    /* position: fixed; */
+    /* top: 0px; */
+    /* left: 198px; */
 }

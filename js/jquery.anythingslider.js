@@ -50,7 +50,7 @@
 			if(base.options.buildNavigation) base.buildNavigation();
 
         	// Get the details
-          base.singleWidth = 680; //base.$single.width();
+          base.singleWidth = 400; //base.$single.width();
             base.pages = base.$items.length;
 
             // Top and tail the list with 'visible' number of items, top has the last section, and tail has the first
