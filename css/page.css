@@ -1,14 +1,7 @@
-/*
-	 CSS-Tricks Example
-	 by Chris Coyier
-	 http://css-tricks.com
-
-body                                    { font: 12px Georgia, Serif; }
-*/
 *                                       { margin: 0; padding: 0; }
 div#page-wrap a, div#page-wrap a img                                { border: 0; text-decoration: none; outline: 0; }
 
-#page-wrap                              { width: 760px; padding: 15px; background: white; margin: 0 auto 50px; position: relative; }
+#page-wrap                              { width: 760px; padding: 15px; background: white; margin: 0 auto 0; position: relative; }
 #col1                                   { width: 49%; float: left; margin: 0 0 20px 0; }
 #col2                                   { width: 49%; float: right; }
 
