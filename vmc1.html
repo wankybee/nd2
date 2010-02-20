@@ -5,18 +5,15 @@
     autoHeight: false,
     changestart: function(event, ui) {
        if(ui.newHeader.text() == "Section 1") {
-             $("#box").load("bx-500.html");
-             $.getScript("js/slider.js");
        }
 
         if(ui.newHeader.text() == "Section 2") {
-             $("#slider").load("bx-500.html");
-             $.getScript("js/slider.js");
        }
      }
     });
 
     $("#box").load("bx-500.html");
+    $("#slider").load("bx-500.html");
     $.getScript("js/slider.js");
 
 </script>
