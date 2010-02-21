@@ -21,14 +21,14 @@ div.heading {
 .footer
 {
      padding-top:50px;
-     /* position: fixed; */
-     /* top: 896px; */
-     /* left: 198px; */
+     position: absolute;
+     top: 796px;
+     left: 0px;
 }
 
 .container
 {
-    /* position: fixed; */
-    /* top: 0px; */
-    /* left: 198px; */
+    position: absolute;
+    top: 0px;
+    left: 198px;
 }
