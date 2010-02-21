@@ -6,7 +6,7 @@
 .slide_box a                                { border: 0; text-decoration: none; outline: 0; }
 .slide_box a img                                { border: 0; text-decoration: none; outline: 0; }
 
-#page-wrap                              { width: 560px; padding: 10px; background: white; margin: 0 auto 10px; position: relative; }
+#page-wrap                              { width: 400px; background: white; position: relative; }
 #col1                                   { width: 49%; float: left; margin: 0 0 20px 0; }
 #col2                                   { width: 49%; float: right; }
 
