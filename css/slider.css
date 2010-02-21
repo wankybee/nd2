@@ -1,7 +1,7 @@
 .anythingSlider                         { width: 560px; height: 280px; position: relative; margin: 0 auto 15px; }
 .anythingSlider .wrapper                { width: 400px; overflow: auto; height: 281px; margin: 0 40px; position: absolute; top: 0; left: 0; }
 .anythingSlider .wrapper ul             { width: 99999px; list-style: none; position: absolute; top: 0; left: 0; background: #eee; border-top: 3px solid #e0a213; border-bottom: 3px solid #e0a213; margin: 0; }
-.anythingSlider ul li                   { display: block; float: left; padding: 0px; height: 217px; width: 400px; margin: 0; }
+.anythingSlider ul li                   { display: block; float: left; padding: 0; height: 217px; width: 400px; margin: 0; }
 .anythingSlider .arrow                  { display: block; height: 200px; width: 67px; background: url(../images/arrows.png) no-repeat 0 0; text-indent: -9999px; position: absolute; top: 65px; cursor: pointer; }
 .anythingSlider .forward                { background-position: 0 0; right: 60px; }
 .anythingSlider .back                   { background-position: -67px 0; left: -20px; }

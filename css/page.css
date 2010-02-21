@@ -3,16 +3,17 @@
 	 by Chris Coyier
 	 http://css-tricks.com
 */
-div.slide_box a                               { border: 0; text-decoration: none; outline: 0; }
-div.slide_box a img                                { border: 0; text-decoration: none; outline: 0; }
-#page-wrap                              { width: 560px; padding: 5px; background: white; margin: 0 auto 10px; position: relative; }
+.slide_box a                                { border: 0; text-decoration: none; outline: 0; }
+.slide_box a img                                { border: 0; text-decoration: none; outline: 0; }
+
+#page-wrap                              { width: 560px; padding: 10px; background: white; margin: 0 auto 10px; position: relative; }
 #col1                                   { width: 49%; float: left; margin: 0 0 20px 0; }
 #col2                                   { width: 49%; float: right; }
 
-div.slide_box h1                                      { font: bold 10px Helvetica, Sans-Serif; letter-spacing: -2px; margin: 20px 0; text-align: center; }
-div.slide_box h2                                      { font: bold 7px Helvetica, Sans-Serif; letter-spacing: -1px; margin: 0 0 10px 0; }
-div.slide_box h3                                      { font: 8px Georgia, Serif; margin: 0 0 10px 0; }  
-div.slide_box h5                                      { font: 7px Georgia, Serif; text-align: center; }
+.slide_box h1                                      { font: bold 10px Helvetica, Sans-Serif; letter-spacing: -2px; margin: 20px 0; text-align: center; }
+.slide_box h2                                      { font: bold 7px Helvetica, Sans-Serif; letter-spacing: -1px; margin: 0 0 10px 0; }
+.slide_box h3                                      { font: 8px Georgia, Serif; margin: 0 0 10px 0; }  
+.slide_box h5                                      { font: 7px Georgia, Serif; text-align: center; }
 pre                                     { font: 7px Monaco, MonoSpace; margin: 0 0 15px 0; }
 #dl                                     { position: absolute; top: 10px; right: 0; background: black; color: white; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 3px 6px; }
 #dl:hover                               { background: #666; }
@@ -30,7 +31,7 @@ pre                                     { font: 7px Monaco, MonoSpace; margin: 0
 /*
     For Specific Slides
 */
-#textSlide                              { padding: 0px; }
+#textSlide                              { padding: 10px 30px; }
 #textSlide h3                           { font: 10px Georgia, Serif; }
 #textSlide h4                           { text-transform: uppercase; font: 15px Georgia, Serif; margin: 10px 0; }
 #textSlide ul                           { list-style: disc; margin: 0 0 0 25px; }
