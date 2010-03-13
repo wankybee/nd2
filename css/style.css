@@ -15,13 +15,12 @@ float:left;
 font-family:Tahoma, Verdana, Arial, sans-serif;
 font-size:12px;
 font-weight:bold;
-font-style:italic;
 text-shadow: rgba(255,255,255, 1) 1px 1px 2px;
 color:#333;
 }
 ul#menu li a {
 display:block;
-padding:16px 20px 17px 18px;/* we need extra top and bottom padding to fit the slices */
+padding:16px 24px 20px 18px;/* we need extra top and bottom padding to fit the slices */
 position: relative;
 z-index: 5;
 color:#333;
@@ -35,11 +34,11 @@ position: absolute;
 ul#menu li.backLava div.leftLava {
 background: url("../img/slider-bg.gif") no-repeat top left;
 height: 100%;
-margin-right:24px;
+margin-right:22px;
 }
 ul#menu li.backLava div.cornerLava {
 background: url("../img/slider-corner.gif") no-repeat bottom right;
-height:27px;
+height:30px;
 width:24px;
 position:absolute;
 bottom:0px;
@@ -47,7 +46,7 @@ right:0px;
 }
 ul#menu li.backLava .bottomLava {
 background: url("../img/slider-bottom.gif") no-repeat bottom left;
-height:27px;
+height:30px;
 width:100%;
 position:absolute;
 bottom:0px;
