@@ -9,6 +9,7 @@
 <script language="JavaScript" type="text/javascript" src="js/jquery.styledButton.js" ></script>
 <script type="text/javascript" src="js/jquery-ui-1.7.2.custom.min.js"></script>
 <link rel="stylesheet" href="css/styledButton.css" type="text/css"/>
+<link rel="stylesheet" href="css/styledButton2.css" type="text/css"/>
 <!-- Framework CSS -->
 <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
 <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>
@@ -24,7 +25,9 @@
       <h1> Autotech CNC </h1>
     </div> <!-- end cap -->
     <div class="span-19 prepend-1 append-4 last heading">
-    <span class="home"><a href="/nd/index.html">Home</a></span><span class="about"><a href="/nd/about.html">About</a></span><span class="careers"><a href="/nd/careers.html">Careers</a></span><span class="products"><a href="">Products</a></span><span class="contact"><a href="/nd/contact.html">Contact</a></span><span class="teller">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <!-- <span class="home"><a href="/nd/index.html">Home</a></span><span class="about"><a href="/nd/about.html">About</a></span><span class="careers"><a href="/nd/careers.html">Careers</a></span><span class="products"><a href="">Products</a></span><span class="contact"><a href="/nd/contact.html">Contact</a></span><span class="teller">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+    <a class="mybutton" href="#" onclick="this.blur(); return false;"><span>Save</span></a>
+    <a class="mybutton" href="#" onclick="this.blur(); return false;"><span>Cancel</span></a>			
     </div>
     <div>
       <div class="clear span-4 prepend-1">
@@ -79,53 +82,6 @@
       </div>
 <script type="text/javascript"> 
 $(document).ready(function () {
-
-$("div.heading span").css({
-'padding' : '5px 20px',
-'font-size' : '15px',
-'font-weight' : 'bold'
-});
-
-$("span.home").styledButton({
-'orientation' : 'left',
-'action' : { 'on' :function () {
-window.location.href = $("span.home a").attr('href');
-}
-},
-'toggle' : true
-});
-$("span.about").styledButton({
-'action' : { 'on' :function () {
-window.location.href = $("span.about a").attr('href');
-}
-},
-'toggle' : true,
-'orientation' : 'center'
-});
-$("span.careers").styledButton({
-'action' : { 'on' :function () {
-window.location.href = $("span.careers a").attr('href');
-}
-},
-'toggle' : true,
-'orientation' : 'center'
-});
-$("span.products").styledButton({
-'orientation' : 'center'
-});
-$("span.contact").styledButton({
-'action' : { 'on' :function () {
-window.location.href = $("span.contact a").attr('href');
-}
-},
-'toggle' : true,
-'orientation' : 'center'
-});
-$("span.teller").styledButton({
-'orientation' : 'right'
-});
-$("span.products").styledButtonActivate();
-$("span.products a").css("color", "white");
 
 $('ul#menu').lavaLamp({ autoReturn: false });
 $('ul#menu2').hide();

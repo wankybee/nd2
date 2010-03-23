@@ -2,11 +2,13 @@
 body                                    { font: 12px Georgia, Serif; }
 ul#menu {
 list-style:none;
-border:1px solid grey;
 padding:10px;
 overflow: hidden; /* makes sure the container fits the floated list-items below */
 background-color:white; /* moved and lightened the background color from ul#menu li */
 width: 90px;
+border-width: 1px;
+border-color: grey;
+border-style:solid;
 }
 ul#menu li{
 margin:1px 2px;
